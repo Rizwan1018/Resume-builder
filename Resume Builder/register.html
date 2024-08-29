@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV Maker | Register</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script type="module" src="Js/register.js" defer></script>
+    <style>
+        body {
+            background: rgb(33, 136, 255);
+            background: linear-gradient(135deg, rgba(33, 136, 255, 1) 0%, rgba(63, 193, 255, 1) 100%);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            margin: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            width: 900px;
+            max-width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .left-side {
+            background: rgb(33, 136, 255);
+            background: linear-gradient(135deg, rgba(33, 136, 255, 1) 0%, rgba(63, 193, 255, 1) 100%);
+            padding: 50px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .left-side h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .left-side p {
+            font-size: 18px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .right-side {
+            padding: 50px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-signin {
+            max-width: 330px;
+            width: 100%;
+        }
+
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+
+        .form-signin input[type="text"],
+        .form-signin input[type="email"],
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding-left: 2.5rem;
+        }
+
+        .form-signin label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #495057;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        .form-signin label i {
+            margin-right: 10px;
+        }
+
+        .form-floating input::placeholder {
+            color: #6c757d;
+            opacity: 1;
+        }
+
+        .form-signin button {
+            border-radius: 5px;
+        }
+
+        .reg-title {
+            position: relative;
+            top: 18px;
+            left: 0px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .title-des {
+            display: flex;
+            font-weight: bolder;
+            padding-bottom: 16px;
+        }
+
+        .Home-description-1 {
+            position: absolute;
+            left: 80px;
+            width: 405px;
+        }
+
+        .title-des,
+        .Home-description-1 {
+            top: 220px;
+        }
+
+        .why-resume {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .why-resume img {
+            width: 30%;
+            border-radius: 6px;
+            margin-left: 70px;
+            margin-right: 300px;
+        }
+
+        .sec-2-heading {
+            font-size: 3rem;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .sec-2-text {
+            text-wrap: wrap;
+            margin-top: 30px;
+            font-size: 1rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .sec-2-text,
+        .sec-2-heading {
+            margin-right: 70px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                overflow-x: hidden;
+            }
+
+            .container {
+                flex-direction: column;
+                height: auto;
+                margin: auto;
+                width: 100%;
+            }
+
+            .left-side,
+            .right-side {
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .why-resume {
+                flex-direction: column;
+            }
+
+            .why-resume img {
+                width: 100%;
+                margin-bottom: 20px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .why-resume {
+                padding: 10px;
+            }
+
+            .sec-2-heading {
+                font-size: 1.2rem;
+            }
+
+            .sec-2-text {
+                font-size: 0.9rem;
+            }
+        }
+
+        .img-right-txt {
+            margin-left: -90px;
+        }
+
+        section {
+            padding: 140px;
+        }
+
+        .navbar {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0109ff;
+            padding: 10px 20px;
+            width: 100%;
+            top: 0px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-right: 100px;
+        }
+
+        .nav-links li {
+            margin-left: 60px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f0f0f0d2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="left-side">
+                <h1>Build your <b>RESUME</b></h1>
+                <p>Join us today and create a stunning resume</p>
+            </div>
+            <div class="right-side">
+                <main class="form-signin">
+                    <form>
+                        <div class="d-flex gap-4 justify-content-center">
+                            <img class="mb-4" src="logo.png" alt="" height="70">
+                            <h4 class="reg-title">Register</h4>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Full Name">
+                            <label for="floatingName"><i class="bi bi-person"></i> Full Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                            <label for="floatingEmail"><i class="bi bi-envelope"></i> Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"> 
+                            <label for="floatingPassword"><i class="bi bi-key"></i> Password</label> 
+                        </div>
+                            <button class="btn btn-primary w-100 py-2" id="submit" type="submit"><i class="bi bi-person-plus-fill"></i>
+                                Register</button>
+                            <div class="d-flex justify-content-between my-3">
+                                <a href="forgot-password.html" class="text-decoration-none">Forgot Password?</a>
+                                <a href="login.html" class="text-decoration-none">Login</a>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
