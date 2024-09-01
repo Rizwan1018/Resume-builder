@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
+        /* Your existing CSS styles */
         body {
             height: 100vh;
             background: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(127, 183, 240, 1) 49%, rgba(132, 206, 246, 1) 100%);
@@ -18,7 +19,6 @@
             align-items: center;
             justify-content: center;
         }
-
         .container {
             width: 90%;
             max-width: 1000px;
@@ -27,7 +27,6 @@
             border-radius: 10px;
             padding: 20px;
         }
-
         .left-side {
             display: flex;
             justify-content: center;
@@ -38,25 +37,20 @@
             text-align: center;
             animation: fadeIn 1.5s ease-in-out infinite alternate;
         }
-
         .left-side h1 {
             font-size: 2rem;
             font-weight: 400;
         }
-
         .left-side span {
             font-weight: bold;
         }
-
         .right-side {
             padding: 20px;
         }
-
         .form-signin input,
         .form-signin button {
             margin-bottom: 1rem;
         }
-
         #typewriter {
             display: inline-block;
             border-right: 2px solid black;
@@ -64,18 +58,23 @@
             overflow: hidden;
             animation: typing 2s steps(1000, end) 1s 1, blink-caret 0.75s step-end infinite;
         }
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
-}
-
-
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: black;
+            }
+        }
     </style>
 </head>
 
@@ -90,7 +89,7 @@
 
             <!-- Right side with login form -->
             <div class="col-md-6 right-side">
-                <form class="form-signin" id="login-container" method="GET">
+                <form class="form-signin" id="login-container" novalidate>
                     <div class="text-center mb-4">
                         <img src="logo.png" alt="Logo" height="70">
                         <h1 class="h3 my-1"><b>Resume</b> Builder</h1>
@@ -113,8 +112,8 @@
             </div>
         </div>
     </div>
-    
-    <script type="module" src="js/login.js"></script>
+
+    <script type="module" src="Js/login.js" defer></script>
 </body>
 
 </html>
