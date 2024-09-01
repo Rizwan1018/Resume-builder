@@ -168,7 +168,7 @@
                                 <a href="#" onclick="toggleEditSkill(event)"><i class="bi bi-pencil-square"></i></a>
                             </div>
                             <textarea class="form-control" id="skillDescription" rows="3" disabled>
-                                Knowledge about basic computer operations, internet browsing, and usage.
+                                
                             </textarea>
                         </div>
                     </div>
@@ -228,6 +228,10 @@
             const experienceTitleValue = document.getElementById('experienceTitle').value;
             const experienceCompanyValue = document.getElementById('experienceCompany').value;
             const experienceDescriptionValue = document.getElementById('experienceDescription').value;
+            const educationTitleValue = document.getElementById('educationTitle').value;
+            const educationInstituteValue = document.getElementById('educationInstitute').value;
+            const educationCompletionDateValue = document.getElementById('educationCompletionDate').value;
+            const skillDescriptionValue = document.getElementById('skillDescription').value;
 
             localStorage.setItem('full-name', fullNameValue);
             localStorage.setItem('email-id', emailValue);
@@ -243,8 +247,12 @@
             localStorage.setItem('experience-title', experienceTitleValue);
             localStorage.setItem('experience-company', experienceCompanyValue);
             localStorage.setItem('experience-description', experienceDescriptionValue);
+            localStorage.setItem('education-Title', educationTitleValue);
+            localStorage.setItem('education-Institute', educationInstituteValue);
+            localStorage.setItem('education-CompletionDate', educationCompletionDateValue);
+            localStorage.setItem('skill-Description', skillDescriptionValue);
 
-            window.location.href = "two.html";
+            window.location.href = "resume1.html";
         });
     </script>
 
