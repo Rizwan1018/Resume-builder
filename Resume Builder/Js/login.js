@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/fireba
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCap3E6PZLip9wyJS8CHGmAFbFh5oBSBkE",
+    apiKey: "",
     authDomain: "login-with-firebase-data-554a6.firebaseapp.com",
     databaseURL: "https://login-with-firebase-data-554a6-default-rtdb.firebaseio.com",
     projectId: "login-with-firebase-data-554a6",
